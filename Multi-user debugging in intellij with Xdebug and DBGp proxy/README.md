@@ -20,7 +20,7 @@ tar -zxvf Komodo-PythonRemoteDebugging-9.3.1-88153-linux-x86_64.tar.gz
 cd Komodo-PythonRemoteDebugging-9.3.1-88153-linux-x86_64
 ```
 * 啟動DBGp proxy
-./pydbgpproxy -d ```IDE-PORT``` -i ```DEBUG-PORT```  
+./pydbgpproxy -d ```DEBUG-PORT``` -i ```IDE-PORT```  
 例:
 ```
 ./pydbgpproxy -d 127.0.0.1:9000 -i 192.168.1.22:9001
