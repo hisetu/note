@@ -1,0 +1,12 @@
+set pathMSBuild="C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\msbuild.exe"
+set project=""
+set outpath=""
+@echo off
+cls
+%pathMSBuild% %project% /p:configuration=release ^
+                     /p:DeployOnBuild=True ^
+                     /p:DeployDefaultTarget=WebPublish ^
+                     /p:WebPublishMethod=FileSystem ^
+                     /p:DeleteExistingFiles=True ^
+                     /p:publishUrl=%outpath%
+pause
